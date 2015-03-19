@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Financial Statement</string>
+    <string name="datelabel">Statement Date</string>
+    <string name="catagories">Catagory Spending</string>
+    <string name="alltrans">All Transactions</string>
+    <string name="furture">Future Transactions</string>
+
+</resources>

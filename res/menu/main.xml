@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ving.financialstatement.MainActivity" >
+
+    <item
+        android:id="@+id/catagories"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/catagories"/>
+    
+    <item
+        android:id="@+id/alltrans"
+        android:orderInCategory="200"
+        android:showAsAction="never"
+        android:title="@string/alltrans"/>
+    
+    <item
+        android:id="@+id/furture"
+        android:orderInCategory="300"
+        android:showAsAction="never"
+        android:title="@string/furture"/>
+
+</menu>

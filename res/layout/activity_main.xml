@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+	android:focusableInTouchMode="true" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="25sp"
+	        android:text="@string/datelabel" />
+        <Space 
+            android:layout_height="1dp"
+            android:layout_width="5dp" />
+	    <TextView
+	        android:id="@+id/statementDate"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="25sp" />
+    
+    </LinearLayout>
+    
+    <Space
+		android:layout_width="1dp"
+		android:layout_height="30dp" />
+
+    <ExpandableListView android:id="@+id/statementDataList"
+        android:groupIndicator="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:childDivider="@android:color/transparent"
+       	android:layout_width="fill_parent"
+       	android:layout_height="0dip"
+       	android:layout_weight="1" />
+
+</LinearLayout>
