@@ -12,8 +12,8 @@ import android.widget.ListView;
 
 public class MyApplication extends Application {
 	
-	public static final String dailyURL = "http://ving.is-a-geek.net:8888/Data/DailyTrans.txt";
-	public static final String statementURL = "http://ving.is-a-geek.net:8888/Data/Statement.txt";
+	public static final String dailyURL = "fill in URL";
+	public static final String statementURL = "fill in URL";
 	
 	private Date reportDate;
 	private Float startBalance;
