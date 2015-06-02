@@ -18,6 +18,7 @@ import android.os.AsyncTask;
 
 public class ReadFinancialData extends AsyncTask<MyApplication, Integer, MyApplication> {
 	
+	private MainActivity mainAct;
 	private Context mContext;
 	private ProgressDialog pd = null;
 	private String errorMsg = null;
@@ -33,12 +34,20 @@ public class ReadFinancialData extends AsyncTask<MyApplication, Integer, MyAppli
 	InputStreamReader ipsr = null;
 	BufferedReader br = null;
 	
-	ReadFinancialData(Context context) {
+	ReadFinancialData(MainActivity act, Context context) {
+		mainAct = act;
 		mContext = context;
 	}
 	
 	protected void onPreExecute() {
-	    pd = ProgressDialog.show(mContext, "Reading", "Getting Financial Data");
+//	    pd = ProgressDialog.show(mContext, "Reading", "Getting Financial Data");
+		pd = new ProgressDialog(mContext);
+	    pd.setIndeterminate(true);
+	    pd.setIndeterminateDrawable(mainAct.getResources().getDrawable(R.drawable.progress_dialog_anim));
+	    pd.setCancelable(false);
+	    pd.setTitle("Reading");
+	    pd.setMessage("Reading the CSV File...");
+	    pd.show();
 	}
 	
 	protected void onProgressUpdate(Integer... progress) {

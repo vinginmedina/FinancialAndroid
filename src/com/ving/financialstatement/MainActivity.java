@@ -13,6 +13,7 @@ import android.widget.TextView;
 public class MainActivity extends Activity {
 	
 	private MyApplication myApp = null;
+	private MainActivity myAct = null;
 	private Context mContext = null;
 	private ExpandableListView statementListView = null;
 	private StatementListAdapter statementAdapter = null;
@@ -22,10 +23,11 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		myApp = (MyApplication) getApplication();
 		setContentView(R.layout.activity_main);
+		myAct = this;
 		mContext = this;
 		statementListView = (ExpandableListView) findViewById(R.id.statementDataList);
 		myApp.setData(this, mContext, statementListView);
-		ReadFinancialData readDataTask = new ReadFinancialData(mContext);
+		ReadFinancialData readDataTask = new ReadFinancialData(myAct, mContext);
 		readDataTask.execute(myApp);
 	}
 

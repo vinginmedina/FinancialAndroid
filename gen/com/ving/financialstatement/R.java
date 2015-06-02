@@ -23,6 +23,27 @@ public final class R {
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
+        public static final int progress_dialog_anim=0x7f020001;
+        public static final int spinner_00=0x7f020002;
+        public static final int spinner_01=0x7f020003;
+        public static final int spinner_02=0x7f020004;
+        public static final int spinner_03=0x7f020005;
+        public static final int spinner_04=0x7f020006;
+        public static final int spinner_05=0x7f020007;
+        public static final int spinner_06=0x7f020008;
+        public static final int spinner_07=0x7f020009;
+        public static final int spinner_08=0x7f02000a;
+        public static final int spinner_09=0x7f02000b;
+        public static final int spinner_10=0x7f02000c;
+        public static final int spinner_11=0x7f02000d;
+        public static final int spinner_12=0x7f02000e;
+        public static final int spinner_13=0x7f02000f;
+        public static final int spinner_14=0x7f020010;
+        public static final int spinner_15=0x7f020011;
+        public static final int spinner_16=0x7f020012;
+        public static final int spinner_17=0x7f020013;
+        public static final int spinner_18=0x7f020014;
+        public static final int spinner_19=0x7f020015;
     }
     public static final class id {
         public static final int alltrans=0x7f08000d;
